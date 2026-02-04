@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RecipeJS App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🍽️ RecipeJS</h1>
+
+    <div class="controls">
+        <h3>Filter</h3>
+        <button onclick="setFilter('ALL')">All Recipes</button>
+        <button onclick="setFilter('Easy')">Easy</button>
+        <button onclick="setFilter('Medium')">Medium</button>
+        <button onclick="setFilter('Hard')">Hard</button>
+        <button onclick="setFilter('Quick')">Quick (&lt; 30 min)</button>
+    </div>
+
+    <div class="controls">
+        <h3>Sort</h3>
+        <button onclick="setSort('NAME')">Name (A–Z)</button>
+        <button onclick="setSort('TIME')">Time (Fastest)</button>
+    </div>
+
+    <div id="recipeList" class="recipes"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
